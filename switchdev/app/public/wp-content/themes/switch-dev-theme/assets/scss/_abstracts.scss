@@ -1,0 +1,76 @@
+// ===============================================================
+// FONTS
+// ===============================================================
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap");
+
+// ===============================================================
+// SASS VARIABLES
+// ===============================================================
+
+// Colors brands
+$color-primary: #bfd800;
+$color-secondary: #00aec6;
+$color-third: #a251a2;
+
+// Colors generic
+$color-white: #fff;
+$color-black: #000;
+$color-grey-dark: #333;
+$color-grey-background: #f2f2f2;
+
+// Menu header
+$mobile-header-height: 60px;
+$desktop-header-height: 80px;
+
+// Layout
+$max-width-small: (720 / 16) * 1em;
+$max-width-large: (1300 / 16) * 1em;
+
+// Z-Index
+$z-index-header: 50;
+$z-index-menu: 30;
+$z-index-modal: 999;
+
+// Fonts
+$font-primary: "Mulish", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$title-font: 'Roboto', sans-serif;
+$body-font: 'Nunito', sans-serif;
+
+$title-bold:700;
+$title-regular:400;
+
+
+// ===============================================================
+// MIXINS AND FUNCTIONS
+// ===============================================================
+
+@mixin box-shadow-small {
+	box-shadow: 0 10px 25px 5px rgba(black, 0.1);
+}
+
+@mixin box-shadow-large {
+	box-shadow: 0 10px 50px 5px rgba(black, 0.1);
+}
+
+@mixin transition($time: 0.2s) {
+	transition: all $time ease-out;
+}
+
+// Use px values for width and height
+@mixin ratio-box($width, $height) {
+	display: none;
+	height: 0;
+	overflow: hidden;
+	padding-top: $width / $height * 100%;
+	position: relative;
+}
+
+@mixin absolute-center() {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+}

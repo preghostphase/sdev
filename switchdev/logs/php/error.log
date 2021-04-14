@@ -1,0 +1,8 @@
+[13-Apr-2021 16:42:06 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\Users\msayers\Local Sites\switchdev\app\public\wp-content\themes\switch-dev-theme\front-page.php on line 54
+[13-Apr-2021 16:42:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in C:\Users\msayers\Local Sites\switchdev\app\public\wp-content\themes\switch-dev-theme\front-page.php:56
+Stack trace:
+#0 C:\Users\msayers\Local Sites\switchdev\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\msayers\Local Sites\switchdev\app\public\wp-blog-header.php(19): require_once('C:\\Users\\msayer...')
+#2 C:\Users\msayers\Local Sites\switchdev\app\public\index.php(17): require('C:\\Users\\msayer...')
+#3 {main}
+  thrown in C:\Users\msayers\Local Sites\switchdev\app\public\wp-content\themes\switch-dev-theme\front-page.php on line 56
